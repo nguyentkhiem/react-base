@@ -1,0 +1,17 @@
+{
+  "auth": {
+    "login": "Login"
+  },
+  "home": "Home",
+  "posts": "Posts",
+  "posts.list": "List Posts",
+  "posts.create": "Create Posts",
+  "users": "Users",
+  "users.list": "List Users",
+  "users.create": "Create Users",
+  "validation": {},
+  "errors": {
+    "400": "error 400",
+    "500": "error 500"
+  }
+}

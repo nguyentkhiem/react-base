@@ -1,0 +1,16 @@
+@import '../../../shared/theme/color.scss';
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .content {
+        border: 1px solid #f4eeee;
+        border-radius: 5px;
+        padding: 25px;
+        min-width: 450px;
+        background-color: $white-color;
+    }
+}

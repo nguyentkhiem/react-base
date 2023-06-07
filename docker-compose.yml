@@ -1,0 +1,20 @@
+version: '3'
+services:
+  react:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    working_dir: /var/www/react
+    volumes:
+      - .:/var/www/react
+      - /var/www/react/node_modules
+    ports:
+      - 5006:3002
+
+  gitlab-runner:
+    image: 'gitlab/gitlab-runner:latest'
+    container_name: react
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./gilab-runner-config:/etc/gitlab-runner
+    restart: unless-stopped

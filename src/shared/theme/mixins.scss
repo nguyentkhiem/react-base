@@ -1,0 +1,29 @@
+// Media query
+@mixin for-phone {
+  @media only screen and (max-width: $largePhone), (max-width: 959.9px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin for-tablet {
+  @media only screen and (min-width: $largePhone) and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin for-tablet-desktop {
+  @media only screen and (min-width: $largePhone) {
+    @content;
+  }
+}
+
+@mixin for-desktop {
+  @media only screen and (min-width: $desktop) {
+    @content;
+  }
+}
+
+// use
+// @include for-phone {
+//     // scss
+// }
